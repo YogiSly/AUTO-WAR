@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Policy managment</title>
+    <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+  <div class="page-policy">
+    <div class="sidebar">
+        <a href="#" class="sidebar__logo">
+            <img src="img/logo.svg" alt="logo: BESPIN GLOBAL">
+        </a>
+        <div class="sidebar__nav">
+            <nav class="sidebar__list">
+                <a href="pol-list.html" class="sidebar__item sidebar__item--active">Policy management</a>
+                <a href="acc-list.html" class="sidebar__item">Account management</a>
+                <a href="user-list.html" class="sidebar__item">User management</a>
+            </nav>
+        </div>
+        <div class="sidebar__footer">
+            <div class="sidebar__log">
+                <img src="img/avatar.png" alt="avatar" class="sidebar__avatar">
+                <div class="sidebar__name">Kaiya Stanton</div>
+            </div>
+            <div class="sidebar__log-out">
+                <img src="img/log-out.svg" alt="log out" class="sidebar__log-out-img">
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-mobile">
+        <img src="img/logo.svg" alt="logo: BESPIN GLOBAL">
+    </div>
+    <div class="content">
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">Policy management</li>
+                <li class="breadcrumbs__item breadcrumbs__item--active">Policy list</li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="navbar__block">
+                <ul class="navbar__select">
+                    <li class="navbar__select-item">Select all</li>
+                    <li class="navbar__select-item">Unselect</li>
+                </ul>
+                <div class="navbar__delete">
+                    <img src="img/delete.svg" alt="delete selection">
+                    <span>Delete selection</span>
+                </div>
+            </div>
+            <div class="navbar__block">
+                <div class="search">
+                    <img src="img/search.svg" alt="search" class="search__img">
+                    <input type="text" class="search__input" placeholder="Search">
+                </div>
+                <div class="navbar__service">
+                    Service
+                </div>
+                <a href="pol-create.html" class="button">Create policy</a>
+            </div>
+        </div>
+        <div class="table">
+            <div class="table-header">
+                <div class="table-header__field">Select</div>
+                <div class="table-header__field">CSP</div>
+                <div class="table-header__field">Service</div>
+                <div class="table-header__field">Pillar</div>
+                <div class="table-header__field">Assessment</div>
+            </div>
+            <div class="table-row">
+                <div class="table-row__field"><input type="checkbox" class="checkbox"></div>
+                <div class="table-row__field">AWS</div>
+                <div class="table-row__field">IAM</div>
+                <div class="table-row__field">Performance efficiency</div>
+                <div class="table-row__field">MFA Setting</div>
+            </div>
+            <div class="table-row">
+                <div class="table-row__field"><input type="checkbox" class="checkbox"></div>
+                <div class="table-row__field"></div>
+                <div class="table-row__field">IAM</div>
+                <div class="table-row__field"></div>
+                <div class="table-row__field">IAM Password policies Usage</div>
+            </div>
+            <div class="table-row">
+                <div class="table-row__field"><input type="checkbox" class="checkbox"></div>
+                <div class="table-row__field"></div>
+                <div class="table-row__field">EC2</div>
+                <div class="table-row__field"></div>
+                <div class="table-row__field">LB Access Log Usage</div>
+            </div>
+        </div>
+        <div class="pagination">
+            <ul class="pagination__list">
+                <li class="pagination__item"></li>
+                <li class="pagination__item pagination__item--active">1</li>
+                <li class="pagination__item">2</li>
+                <li class="pagination__item">...</li>
+                <li class="pagination__item">9</li>
+                <li class="pagination__item">10</li>
+                <li class="pagination__item"></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>User Registration</title>
+  <script src="js/script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+  <div class="user-register">
+    <div class="sidebar" id="sidebar">
+      <a href="#" class="sidebar__logo">
+        <img src="img/logo.svg" alt="logo: BESPIN GLOBAL">
+      </a>
+      <div class="sidebar__nav">
+        <nav class="sidebar__list">
+          <a href="pol-list.html" class="sidebar__item">Policy management</a>
+          <a href="acc-list.html" class="sidebar__item">Account management</a>
+          <a href="user-list.html" class="sidebar__item sidebar__item--active">User management</a>
+        </nav>
+      </div>
+      <div class="sidebar__footer">
+        <div class="sidebar__log">
+          <img src="img/avatar.png" alt="avatar" class="sidebar__avatar">
+          <div class="sidebar__name">Kaiya Stanton</div>
+        </div>
+        <div class="sidebar__log-out">
+          <img src="img/log-out.svg" alt="log out" class="sidebar__log-out-img">
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-mobile">
+      <img src="img/logo.svg" alt="logo: BESPIN GLOBAL">
+    </div>
+    <div class="content">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">User Management</li>
+          <li class="breadcrumbs__item breadcrumbs__item--active">User Registration</li>
+        </ul>
+      </div>
+      <form action="none" class="form-usreg">
+        <div class="block ">
+          <div class="block__item form-usreg__title">Basic info</div>
+        </div>
+        <div class="block">
+          <div class="block__item">
+            <div class="block__name">ID*</div>
+            <input type="text" class="block__input" placeholder="ID">
+          </div>
+          <div class="block__item">
+            <div class="block__name">PW*</div>
+            <input type="text" class="block__input" placeholder="PW">
+          </div>
+        </div>
+        <div class="block">
+          <div class="block__item">
+            <div class="block__name">Name*</div>
+            <input type="text" class="block__input" placeholder="Name">
+          </div>
+          <div class="block__item">
+            <div class="block__name">Contact person*</div>
+            <input type="text" class="block__input" placeholder="PW">
+          </div>
+        </div>
+        <div class="block">
+          <div class="block__item block__item--inline">
+            <div class="block__name block__name--contact">Contact email*</div>
+            <input type="text" class="block__input block__input-fix" placeholder="input">
+            <span class="block__item--text">@</span>
+            <input type="text" class="block__input block__input-fix" placeholder="input">
+            <select class="block__list block__list--fix">
+              <option class="block__item">Select</option>
+              <option class="block__item">Select</option>
+            </select>
+          </div>
+        </div>
+        <div class="block ">
+          <div class="block__item form-usreg__title">Account info</div>
+        </div>
+        <div class="block">
+          <div class="block__item">
+            <div class="block__name">CSP*</div>
+            <select class="block__list">
+              <option class="block__item">AWS</option>
+              <option class="block__item">AWS</option>
+            </select>
+          </div>
+          <div class="block__item block__item--two">
+            <div class="block__name">Access Key ID*</div>
+            <input type="text" class="block__input" placeholder="Access Key ID">
+          </div>
+          <div class="block__item">
+            <div class="block__name">Secret Access Key*</div>
+            <input type="text" class="block__input" placeholder="Secret Access Key">
+          </div>
+        </div>
+        <div class="block ">
+          <div class="block__item form-usreg__title">Attachment</div>
+        </div>
+        <div class="block">
+          <div class="block__item">
+            <div class="block__name">AWS War Report</div>
+            <input type="text" class="block__input block__input--file" placeholder="Input">
+            <button class="button button--disabled" disabled="disabled">File serach</button>
+          </div>
+          <div class="block__item">
+            <div class="block__name">Architecture document*</div>
+            <input type="text" class="block__input block__input--file" placeholder="Input">
+            <button class="button button--disabled" disabled="disabled">File serach</button>
+          </div>
+        </div>
+        <div class="block block__button">
+          <button type="button" class="button button--cancel">Cancel</button>
+          <button type="button" class="button button--save">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
